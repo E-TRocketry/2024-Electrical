@@ -20,6 +20,7 @@ env.set_atmospheric_model(
         (1600, 2), # 2 m/s at 1000 m
     ],
 )
+#test
 
 env.plots.atmospheric_model()
 
