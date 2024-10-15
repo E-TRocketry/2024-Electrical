@@ -6,8 +6,23 @@ env = Environment(latitude=32.990254, longitude=-106.974998, elevation=1400)
 tomorrow = datetime.date.today() + datetime.timedelta(days=1)
 env.set_date((tomorrow.year, tomorrow.month, tomorrow.day, 12))
 
-env.set_atmospheric_model(type="Forecast", file="GFS")
-env.max_expected_height = 5000 
+env.set_atmospheric_model(
+    type="custom_atmosphere",
+    pressure=None,
+    temperature=300, #Kelvin
+    wind_u=[
+        (0, 5), # 5 m/s at 0 m
+        (1000, 10) # 10 m/s at 1000 m
+    ],
+    wind_v=[
+        (0, -2), # -2 m/s at 0 m
+        (500, 3), # 3 m/s at 500 m
+        (1600, 2), # 2 m/s at 1000 m
+    ],
+)
+
+env.plots.atmospheric_model()
+
 env.info()
 
 thrust_curve = [
@@ -106,6 +121,8 @@ test_flight = Flight(
     heading=0,       
     verbose=True
 )
+
+calisto.show()
 
 test_flight.plot_trajectory_3d() 
 
