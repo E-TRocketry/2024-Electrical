@@ -8984,12 +8984,6 @@
 		(uuid "686de8f3-ed59-4414-8ffb-ba7cc089cd41")
 	)
 	(junction
-		(at 288.29 58.42)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6a80a0e8-ac2c-482b-b850-f553ecd87fd9")
-	)
-	(junction
 		(at 96.52 26.67)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -9585,6 +9579,16 @@
 	)
 	(wire
 		(pts
+			(xy 340.36 25.4) (xy 341.63 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "45b8760b-16b1-4608-a429-eb80883891ed")
+	)
+	(wire
+		(pts
 			(xy 304.8 119.38) (xy 311.15 119.38)
 		)
 		(stroke
@@ -9682,6 +9686,16 @@
 			(type default)
 		)
 		(uuid "541f5423-148a-4ebd-ac85-d613e6c6b266")
+	)
+	(wire
+		(pts
+			(xy 341.63 25.4) (xy 341.63 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54ef6bf3-92c5-4565-9633-d826008b23d1")
 	)
 	(wire
 		(pts
@@ -10435,16 +10449,6 @@
 	)
 	(wire
 		(pts
-			(xy 288.29 58.42) (xy 290.83 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ad4e9ce5-dc41-45da-9d86-4864693763b7")
-	)
-	(wire
-		(pts
 			(xy 67.31 20.32) (xy 66.04 20.32)
 		)
 		(stroke
@@ -10642,16 +10646,6 @@
 			(type default)
 		)
 		(uuid "cc199b35-4cf0-4035-9cae-66a880deb3a6")
-	)
-	(wire
-		(pts
-			(xy 283.21 58.42) (xy 288.29 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cc36a755-e5d7-4ce7-89ad-cb5f21de0e6e")
 	)
 	(wire
 		(pts
@@ -10925,6 +10919,16 @@
 	)
 	(wire
 		(pts
+			(xy 325.12 25.4) (xy 332.74 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f26c1fed-6a7d-4d87-b9ed-90a0749f3bd7")
+	)
+	(wire
+		(pts
 			(xy 339.09 170.18) (xy 344.17 170.18)
 		)
 		(stroke
@@ -11127,7 +11131,7 @@
 	)
 	(text "INPUT USB"
 		(exclude_from_sim no)
-		(at 244.094 22.352 0)
+		(at 192.278 17.526 0)
 		(effects
 			(font
 				(size 2.54 2.54)
@@ -11147,7 +11151,7 @@
 	)
 	(text "POWER STABILIZATION"
 		(exclude_from_sim no)
-		(at 301.244 22.352 0)
+		(at 299.72 18.796 0)
 		(effects
 			(font
 				(size 2.54 2.54)
@@ -11359,28 +11363,6 @@
 			)
 		)
 	)
-	(global_label "VBUS_out"
-		(shape input)
-		(at 283.21 58.42 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "0fa257dd-7131-4e82-8d27-f11c46b525ea")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 271.3349 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "RST"
 		(shape input)
 		(at 133.35 161.29 270)
@@ -11405,7 +11387,7 @@
 	)
 	(global_label "VBUS_out"
 		(shape input)
-		(at 331.47 30.48 180)
+		(at 325.12 25.4 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11415,7 +11397,7 @@
 		)
 		(uuid "1b71d848-c470-412f-b5ce-22645b1dcb57")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 319.5949 30.48 0)
+			(at 313.2449 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17565,71 +17547,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VCC")
-		(at 288.29 58.42 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "7526598b-5025-4a3a-82cc-720cee949d0b")
-		(property "Reference" "#PWR068"
-			(at 288.29 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VCC"
-			(at 289.56 63.246 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 288.29 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 288.29 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 288.29 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "19bf821c-db51-494a-9b70-52f9f901a710")
-		)
-		(instances
-			(project "Vanguard_new"
-				(path "/972fbf12-2dcd-4fdf-b1c9-8a2880c46640"
-					(reference "#PWR068")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3.3V")
 		(at 248.92 49.53 0)
 		(unit 1)
@@ -19428,73 +19345,6 @@
 			(project "Vanguard_new"
 				(path "/972fbf12-2dcd-4fdf-b1c9-8a2880c46640"
 					(reference "R26")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 339.09 30.48 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b0e54ea5-dcfb-4459-a884-db7cdc8f16f3")
-		(property "Reference" "#PWR034"
-			(at 345.44 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 342.9 30.4799 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 339.09 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 339.09 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 339.09 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f52f3402-40be-4c3e-9296-4960e5e10bf7")
-		)
-		(instances
-			(project "Vanguard_new"
-				(path "/972fbf12-2dcd-4fdf-b1c9-8a2880c46640"
-					(reference "#PWR034")
 					(unit 1)
 				)
 			)
@@ -21312,7 +21162,7 @@
 	)
 	(symbol
 		(lib_id "Diode:PMEG6020ER")
-		(at 335.28 30.48 180)
+		(at 336.55 25.4 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -21321,7 +21171,7 @@
 		(fields_autoplaced yes)
 		(uuid "d0932400-7c0e-4904-bcab-a6cc96c28879")
 		(property "Reference" "D6"
-			(at 335.5975 24.13 0)
+			(at 336.8675 19.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21329,7 +21179,7 @@
 			)
 		)
 		(property "Value" "PMEG6020ER"
-			(at 335.5975 26.67 0)
+			(at 336.8675 21.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21337,7 +21187,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:Nexperia_CFP3_SOD-123W"
-			(at 335.28 26.035 0)
+			(at 336.55 20.955 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21346,7 +21196,7 @@
 			)
 		)
 		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PMEG6020ER.pdf"
-			(at 335.28 30.48 0)
+			(at 336.55 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21355,7 +21205,7 @@
 			)
 		)
 		(property "Description" "60V, 2A low Vf MEGA Schottky barrier rectifier, SOD-123W"
-			(at 335.28 30.48 0)
+			(at 336.55 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
