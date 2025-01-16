@@ -12457,7 +12457,7 @@
 	)
 	(text "FLASH CHIP\n"
 		(exclude_from_sim no)
-		(at 212.2747 205.1733 0)
+		(at 212.09 204.216 0)
 		(effects
 			(font
 				(size 2.54 2.54)
